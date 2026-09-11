@@ -1,0 +1,26 @@
+{
+  "name": "shpbl-canary-chain",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Canary evidence chain: mints canary markers into the package's own synthetic test data and detects those markers reappearing in operator-supplied text. Reference implementation of the public SHPBL behaviour specification.",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "shpbl-canary-chain": "src/mcp-server.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "scan": "bun run scripts/symbol-scan.ts",
+    "typecheck": "tsgo --noEmit -p tsconfig.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "bun-types": "^1.1.0"
+  },
+  "author": "Kenneth E. Sweet Jr.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SweetKenneth/shpbl-canary-chain.git"
+  }
+}
